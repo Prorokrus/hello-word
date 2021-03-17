@@ -9,11 +9,12 @@ import {ContentLayout} from "./Layouts/ContentLayout/ContentLayout";
 import {FooterLayout} from "./Layouts/FooterLayout/FooterLayout";
 import {SetInitialLocalStorage} from "./helpers/functions";
 import {ContentData} from "./Mock/MockData";
+import NoContent from "./components/NoContent/NoContent";
+import {ItArticles} from "./components/ItArticles/ItArticles";
+import {SecurityArticles} from "./components/SecurityArticles/SecyrityArticles";
 
 function App() {
-    /*useEffect(() => {
-        SetInitialLocalStorage()
-    }, [])*/
+
     const [ initialState, setInitialState ] = useState(ContentData)
 
     return (
@@ -26,15 +27,13 @@ function App() {
 
                         <Switch>
                             <Route exact path="/">
-                                {/*<About />*/}
                                 <ContentLayout initialState={ initialState } setInitialState={ setInitialState } />
                             </Route>
                             <Route exact path="/it">
-                                {/*<Users />*/}
-
+                                <ItArticles initialState={ initialState.filter(t=>t.theme === "it") } setInitialState={ setInitialState } />
                             </Route>
                             <Route exact path="/security">
-                                {/*<Home />*/}
+                                <SecurityArticles initialState={ initialState.filter(t=>t.theme === "security") } setInitialState={ setInitialState } />
                             </Route>
                         </Switch>
 
