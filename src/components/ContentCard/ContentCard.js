@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Card, message} from 'antd';
-import {deleteCard} from "../../helpers/functions";
+import {createCard, deleteCard} from "../../helpers/functions";
 
 const { Meta } = Card;
 

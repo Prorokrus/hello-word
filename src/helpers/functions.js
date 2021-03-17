@@ -1,4 +1,8 @@
 import { ContentData } from "../Mock/MockData";
+import {Card} from "antd";
+import { v4 as uuid } from 'uuid';
+import Meta from "antd/es/card/Meta";
+import {ContentCard} from "../components/ContentCard/ContentCard";
 
 export function GetLocal() {
     return JSON.parse(localStorage.getItem('initialState')) || []
@@ -20,4 +24,11 @@ export function deleteCard(initialState, index) {
     const state = initialState
     const removedElement = state.splice(index, 1)
     return [removedElement, state]
+}
+
+export function createCard(initialState, setInitialState, title, theme, img, description) {
+    const state = initialState
+    const value = {title, theme, img, description}
+    const createdElement = state.push(value)
+    return [createdElement, state]
 }

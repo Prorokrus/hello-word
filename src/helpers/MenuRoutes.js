@@ -1,4 +1,4 @@
-import { CodeFilled, HomeOutlined, LockFilled } from "@ant-design/icons";
+import { CodeFilled, HomeOutlined, LockFilled, PlusOutlined } from "@ant-design/icons";
 
 export const NavRoutes = [
     {
@@ -18,5 +18,11 @@ export const NavRoutes = [
         name: "Security",
         icon: <LockFilled />,
         path: "/security"
+    },
+    {
+        id: 3,
+        name: "Add Article",
+        icon: <PlusOutlined />,
+        path: "/add-article"
     }
 ]

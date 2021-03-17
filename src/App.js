@@ -7,11 +7,13 @@ import {MenuLayout} from "./Layouts/MenuLayout/MenuLayout";
 import {HeaderLayout} from "./Layouts/HeaderLayout/HeaderLayout";
 import {ContentLayout} from "./Layouts/ContentLayout/ContentLayout";
 import {FooterLayout} from "./Layouts/FooterLayout/FooterLayout";
-import {SetInitialLocalStorage} from "./helpers/functions";
+import {GetLocal, SetInitialLocalStorage} from "./helpers/functions";
 import {ContentData} from "./Mock/MockData";
 import NoContent from "./components/NoContent/NoContent";
 import {ItArticles} from "./components/ItArticles/ItArticles";
 import {SecurityArticles} from "./components/SecurityArticles/SecyrityArticles";
+import AddArticle from "./components/AddArticle/AddArticle";
+import AddArticleForm from "./components/AddArticle/AddArticle";
 
 function App() {
 
@@ -34,6 +36,12 @@ function App() {
                             </Route>
                             <Route exact path="/security">
                                 <SecurityArticles initialState={ initialState.filter(t=>t.theme === "security") } setInitialState={ setInitialState } />
+                            </Route>
+                            <Route exact path="/add-article">
+                                <AddArticleForm initialState={ initialState } setInitialState={ setInitialState }/>
+                            </Route>
+                            <Route exact path="**">
+                                <NoContent/>
                             </Route>
                         </Switch>
 
