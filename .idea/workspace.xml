@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ec68a5-2b70-4448-80de-46cfb607f544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddArticle/AddArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentCard/ContentCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentCard/ContentCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/MenuRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/MenuRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/functions.js" afterDir="false" />
-    </list>
+    <list default="true" id="44ec68a5-2b70-4448-80de-46cfb607f544" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +55,7 @@
       <workItem from="1614434177879" duration="9563000" />
       <workItem from="1614578692254" duration="2003000" />
       <workItem from="1615738163575" duration="8077000" />
-      <workItem from="1615992436548" duration="12427000" />
+      <workItem from="1615992436548" duration="12770000" />
     </task>
     <servers />
   </component>
