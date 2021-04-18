@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ec68a5-2b70-4448-80de-46cfb607f544" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout/ContentLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobx/ProviderRootStore.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobx/models/ContentModel.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mobx/stores/RootStore$.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout/ContentLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout/ContentLayout2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +50,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir\Projects\TWEB\my-react-app\src\mobx" />
+      <recent name="C:\Users\Vladimir\Projects\TWEB\my-react-app\src\Layouts\HeaderLayout" />
+      <recent name="C:\Users\Vladimir\Projects\TWEB\my-react-app\src\Layouts\MenuLayout" />
       <recent name="C:\Users\Vladimir\Projects\TWEB\my-react-app\src\components\NoContent" />
     </key>
   </component>
@@ -57,7 +69,9 @@
       <workItem from="1614434177879" duration="9563000" />
       <workItem from="1614578692254" duration="2003000" />
       <workItem from="1615738163575" duration="8077000" />
-      <workItem from="1615992436548" duration="13183000" />
+      <workItem from="1615992436548" duration="13480000" />
+      <workItem from="1616222520828" duration="2305000" />
+      <workItem from="1618753634861" duration="9070000" />
     </task>
     <servers />
   </component>

@@ -1,17 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "testreact",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-=======
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
@@ -31,7 +18,6 @@
     "react-scripts": "4.0.3",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
->>>>>>> feature/add-article-form
   },
   "scripts": {
     "start": "react-scripts start",
@@ -56,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mobx": "^6.2.0",
+    "mobx-react-lite": "^3.2.0",
+    "mobx-state-tree": "^5.0.1"
   }
 }
