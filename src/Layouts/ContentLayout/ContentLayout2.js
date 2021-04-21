@@ -6,7 +6,7 @@ import './style.scss';
 
 const { Content } = Layout;
 
-export const ContentLayout = ({ initialState, setInitialState }) => {
+export const ContentLayout2 = ({ initialState, setInitialState }) => {
 
     return (
         <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
