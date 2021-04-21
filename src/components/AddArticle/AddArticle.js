@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Form, Input, InputNumber, Button } from 'antd';
+import {useRootStore} from "../../mobx/ProviderRootStore";
 import {createCard} from "../../helpers/functions";
+//import {createCard} from "../../mobx/models/ContentModel.model";
+
 const layout = {
     labelCol: {
         span: 8,
@@ -12,18 +15,11 @@ const layout = {
 
 const validateMessages = {
     required: '${label} is required!',
-   /* types: {
-        email: '${label} is not a valid email!',
-        number: '${label} is not a valid number!',
-    },
-    number: {
-        range: '${label} must be between ${min} and ${max}',
-    },*/
 };
 
-const AddArticleForm = ({initialState, setInitialState}) => {
+const AddArticleForm = ({initialState}) => {
 
-
+const { setInitialState, addContent, addContent$ ,content$ } = useRootStore()
     const [title, setTitle] = useState("My Article")
     const [theme, setTheme] = useState("it")
     const [img, setImg] = useState("https://blogs.biomedcentral.com/on-physicalsciences/wp-content/uploads/sites/14/2019/02/data-1-620x342.jpg")
@@ -34,7 +30,8 @@ const AddArticleForm = ({initialState, setInitialState}) => {
         console.log("theme>>>",theme);
         console.log("img>>", img);
         console.log("desc>>>", description);
-        createCard(initialState, setInitialState, title, theme, img, description)
+        //createCard(initialState, setInitialState, title, theme, img, description)
+        addContent({title, theme, img, description});
     };
 
     return (

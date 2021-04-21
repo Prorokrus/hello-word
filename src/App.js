@@ -7,20 +7,22 @@ import {MenuLayout} from "./Layouts/MenuLayout/MenuLayout";
 import {HeaderLayout} from "./Layouts/HeaderLayout/HeaderLayout";
 import {ContentLayout} from "./Layouts/ContentLayout/ContentLayout";
 import {FooterLayout} from "./Layouts/FooterLayout/FooterLayout";
-import {GetLocal, SetInitialLocalStorage} from "./helpers/functions";
-import {ContentData} from "./Mock/MockData";
 import NoContent from "./components/NoContent/NoContent";
-import {ItArticles} from "./components/ItArticles/ItArticles";
-import {SecurityArticles} from "./components/SecurityArticles/SecyrityArticles";
+import {ItArticle} from "./components/ItArticles/ItArticle";
+import {SecurityArticles} from "./components/SecurityArticles/SecurityArticles";
 import AddArticleForm from "./components/AddArticle/AddArticle";
-import {StoreProvider} from "./mobx/ProviderRootStore";
+import {StoreProvider, useRootStore} from "./mobx/ProviderRootStore";
+
+
 
 function App() {
+    const { setInitialState, content$ } = useRootStore()
 
-    const [ initialState, setInitialState ] = useState(ContentData)
+    useEffect(() => {
+        setInitialState()
+    }, [])
 
     return (
-          <StoreProvider>
             <Router>
                 <Layout>
                     <MenuLayout/>
@@ -33,13 +35,13 @@ function App() {
                                 <ContentLayout/>
                             </Route>
                             <Route exact path="/it">
-                                <ItArticles initialState={ initialState.filter(t=>t.theme === "it") } setInitialState={ setInitialState } />
+                                <ItArticle />
                             </Route>
                             <Route exact path="/security">
-                                <SecurityArticles initialState={ initialState.filter(t=>t.theme === "security") } setInitialState={ setInitialState } />
+                                <SecurityArticles />
                             </Route>
                             <Route exact path="/add-article">
-                                <AddArticleForm initialState={ initialState } setInitialState={ setInitialState }/>
+                                <AddArticleForm />
                             </Route>
                             <Route exact path="**">
                                 <NoContent/>
@@ -50,7 +52,6 @@ function App() {
                     </Layout>
                 </Layout>
             </Router>
-      </StoreProvider>
   )
 }
 

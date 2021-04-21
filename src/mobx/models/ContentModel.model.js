@@ -5,13 +5,20 @@ export const ContentModel = types.model('ContentModel', {
     id: types.identifier,
     title: types.string,
     description: types.string,
-    img: types.string
+    img: types.string,
+    theme: types.string
 })
 
     .actions((self) => ({
         removeCard(id) {
             const  {content$, setUpdateContent } = getParentOfType(self, RootStore$)
             const  newContent = content$.filter((item) => item.id !== id)
+            setUpdateContent(newContent)
+            console.log('content$>>', content$)
+        },
+        createCard(title, theme, description, img) {
+            const  {content$, setUpdateContent } = getParentOfType(self, RootStore$)
+            const  newContent = content$.push({title, theme, img, description})
             setUpdateContent(newContent)
             console.log('content$>>', content$)
         }
